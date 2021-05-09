@@ -1,11 +1,15 @@
 <template>
-  <ul>
+  <div class="container">
+    <div class="row">
+      <ul>
     <li v-for="content in contents" :key="content.id">
       <nuxt-link :to="`/${content.id}`">
         {{ content.title }}
       </nuxt-link>
     </li>
-  </ul>
+    </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -35,6 +39,9 @@ export default {
   text-align: center;
 }
 
+
+
+
 .title {
   font-family:
     'Quicksand',
@@ -63,5 +70,9 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+ul {
+  list-style-type: none;
 }
 </style>

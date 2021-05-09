@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <h1 class="title">{{ title }}</h1>
+    <h1 class="title-page">{{ title }}</h1>
     <p class="publishedAt">{{ publishedAt }}</p>
     <div class="post" v-html="body"></div>
   </main>
@@ -27,14 +27,15 @@ export default {
 	 width: 960px;
 	 margin: 0 auto;
 }
- .title {
+ .title-page {
 	 margin-bottom: 20px;
+	 font-size:24px;
 }
  .publishedAt {
 	 margin-bottom: 40px;
 }
  .post > h1 {
-	 font-size: 30px;
+	 font-size: 24px;
 	 font-weight: bold;
 	 margin: 40px 0 20px;
 	 background-color: #eee;

@@ -48,7 +48,7 @@ export default {
   generate: {
     async routes() {
       const pages = await axios
-        .get('', {
+        .get('https://jjcproject.microcms.io/api/v1/blogme?limit=100', {
           headers: { 'X-API-KEY': '78f8f871-a021-4bda-ad62-887f8a5d39fc' }
         })
         .then((res) =>
