@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    
     <div class="row">
       <ul>
     <li v-for="content in contents" :key="content.id">
@@ -74,5 +75,8 @@ export default {
 
 ul {
   list-style-type: none;
+  padding:0;
 }
+
+
 </style>

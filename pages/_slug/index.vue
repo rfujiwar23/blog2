@@ -1,9 +1,13 @@
 <template>
-  <main class="main">
-    <h1 class="title-page">{{ title }}</h1>
-    <p class="publishedAt">{{ publishedAt }}</p>
-    <div class="post" v-html="body"></div>
+  <div class="container">
+	<main class="main">
+    <div class="blog">
+		<h1 class="title-page">{{ title }}</h1>
+		<p class="publishedAt">{{ publishedAt }}</p>
+		<div class="post" v-html="body"></div>
+	</div>
   </main>
+  </div>
 </template>
 
 <script>
@@ -23,9 +27,19 @@ export default {
 </script>
 
 <style scoped>
+
+.container {
+	background: rgb(223,252,184);
+	background: linear-gradient(135deg, rgba(223,252,184,1) 0%, rgba(33,196,168,1) 100%);
+}
+
 .main {
 	 width: 960px;
 	 margin: 0 auto;
+}
+
+.blog {
+	padding:20px;
 }
  .title-page {
 	 margin-bottom: 20px;
